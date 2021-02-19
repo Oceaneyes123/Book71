@@ -5553,6 +5553,19 @@ methods: {
       }
     }
 
+    if(this.$router.history.current.fullPath.indexOf('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG7') != -1){
+      for(var i = 0; i < 76; i++){
+        if(this.$router.history.current.fullPath === '/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG7/unit' + i){
+          this.audio = new Audio('../../audio/FreeTalking-Opinion-LG7/Unit' +i+ '.mp3')
+          this.icon = "pause";
+          this.audioPlaying = true;
+          this.playArrow = false;
+          this.audio.play();
+          setInterval(this.setPosition, 50)
+        }
+      }
+    }
+
     if(this.$router.history.current.fullPath.indexOf('/PrototypeBusiness/BusinessStep1') != -1){
       for(var i = 0; i < 21; i++){
         if(this.$router.history.current.fullPath === '/PrototypeBusiness/BusinessStep1/chapter' + i){
