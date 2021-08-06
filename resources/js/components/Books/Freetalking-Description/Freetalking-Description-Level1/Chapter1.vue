@@ -30,9 +30,8 @@
 
       <h3>They look happy.</h3>
 
-      <p>
-      <h4>소풍을 하고 있는 네명의 사람이 있습니다.</h4>
-      </p>
+      <p><h4>소풍을 하고 있는 네명의 사람이 있습니다.</h4></p>
+
       <h4>그들은 행복해 보입니다.</h4>
 
 
@@ -46,7 +45,7 @@
         </p>
 
         <p>
-          <b>Fruit 과일, 열매, 산물, 동성애자, 호모, 열매를 맺다</b>
+          <b>Fruit 과일, 열매</b>
         </p>
 
         <p>
@@ -54,7 +53,7 @@
         </p>
 
         <p>
-          <b>Park 공원, 지역[단지], 사유지 공원[대정원], 경기장, 축구장; 럭비 경기장</b>
+          <b>Park 공원, 지역[단지], 사유지 공원[대정원]</b>
         </p>
 
       </div>
@@ -141,58 +140,35 @@
 
 <script>
 export default {
+  props: ["fontSize"],
 
-  props: ['fontSize'],
-
-  data(){
-
-    return{
-
-
-    }
-
+  data() {
+    return {};
   },
 
+  beforeMount() {},
 
-  beforeMount(){
+  methods: {},
 
-
+  watch: {
+    fontSize(current, old) {
+      console.log(current, "current");
+      console.log(old, "previous");
+    },
   },
-
-  methods:{
-
-
-  },
-
-  watch:{
-
-    fontSize(current, old){
-
-      console.log(current, 'current')
-      console.log(old, 'previous')
-
-
-    }
-  }
-}
+};
 </script>
 
 <style scoped lang="css">
-
-p{
-
+p {
   margin-top: 10px;
 }
 
-h3{
+h3 {
   padding-top: 7px;
-
 }
 
-
-body{
-
+body {
   font-size: 16px;
 }
-
 </style>

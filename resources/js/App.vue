@@ -4030,6 +4030,744 @@
 </div>
 
 
+<div v-if="$route.name === 'FreeTalking_Opinion_LG8'">
+  <v-layout>
+    <v-navigation-drawer v-model="drawer" :mini-variant="mini" absolute style="background-color:#E5E5E5; position:fixed; top:0; left:0; overflow-y:hidden;" temporary>
+      <v-list class="pa-1">
+        <v-list-tile avatar>
+          <v-list-tile-avatar>
+            <img src="http://cdn.onlinewebfonts.com/svg/img_97686.png">
+          </v-list-tile-avatar>
+          <v-list-tile-content>
+            <v-list-tile-title>Free Talking Topics</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+      </v-list>
+      <v-divider></v-divider>
+      <v-list>
+        <template v-slot:activator>
+          <v-list-tile>
+            <v-list-tile-action>
+              <v-icon>book</v-icon>
+            </v-list-tile-action>
+            <v-list-tile-title>Table of Contents</v-list-tile-title>
+          </v-list-tile>
+        </template>
+        
+        <v-list class="custom-list">
+          <v-list-tile>
+            <h2>Table of Contents</h2>
+          </v-list-tile>
+                  
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit1'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG8/unit' + 1) ">[03/22] Thoughts on Vaccines<br>백신에 관한 생각</v-list-tile>       
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit2'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG8/unit' + 2) ">[03/23] Academics and Success in Life<br>삶과 학업의 성공</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit3'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG8/unit' + 3) ">[03/24] Should Athletes Receive Government Funding?<br>운동선수들이 정부 지원금을 받아야 하나?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit4'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG8/unit' + 4) ">[03/25] Should There Be a Mandatory Retirement Age?<br>정년 나이는 정해져 있어야 할까?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit5'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG8/unit' + 5) ">[03/26] Who is Responsible for the Costs of Nursery Education?<br>유아교육의 비용은 누가 책임져야 하나?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit6'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG8/unit' + 6) ">[03/29] Is It Better to Get Married Earlier or Later?<br>결혼, 일찍 하는 것이 좋을까? 늦게 하는 것이 좋을까?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit7'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG8/unit' + 7) ">[03/30] Should Tablets Replace Textbooks in the Classrooms?<br>교과서를 태블릿 PC로 대체하는 것이 옳은 것인가?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit8'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG8/unit' + 8) ">[03/31] Housewives vs. Career Mothers<br>전업 주부 대 직장 여성</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit9'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG8/unit' + 9) ">[04/01] How Do You Feel about Nannies?<br>보모에 대해 어떻게 생각하는가?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit10'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG8/unit' + 10) ">[04/05] The Meaning of Uniforms<br>유니폼의 의미</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit11'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG8/unit' + 11) ">[04/06] Children Must Work Too?<br>아이들도 일을 해야만 할까?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit12'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG8/unit' + 12) ">[04/07] Society Needs Competition?<br>사회에는 경쟁이 필요한가?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit13'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG8/unit' + 13) ">[04/08] Animal Rights: Are They Important?<br>동물의 권리는 중요한가?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit14'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG8/unit' + 14) ">[04/09] Strict Parents: Should they be More Laissez Faire?<br>엄격한 부모: 그들은 좀 더 자유방임주의적이어야 할까?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit15'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG8/unit' + 15) ">[04/12] Does Going to a Good University Matter?<br>좋은 대학에 들어가는 것은 중요할까?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit16'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG8/unit' + 16) ">[04/13] Dealing with Bullies<br>괴롭힘 처리하기</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit17'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG8/unit' + 17) ">[04/14] The Use of the Internet and Plagiarism<br>인터넷 사용과 표절</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit18'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG8/unit' + 18) ">[04/15] Television VS Books<br>텔레비전 vs. 책</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit19'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG8/unit' + 19) ">[04/16] Are You Burnt Out?<br>당신은 과부하 상태?</v-list-tile>
+        </v-list>
+      </v-list>
+       
+    </v-navigation-drawer>
+    <v-toolbar app :fixed="toolbar.fixed" :clipped-left="toolbar.clippedLeft" style="background-color: #F76830;">
+      <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
+      <v-toolbar-title style="margin-left: 0px; margin-right: 5px;">Free Talking Topics</v-toolbar-title>
+      <v-spacer></v-spacer>
+      <template v-if="speechSlot" #extension>
+        <v-container>
+            <v-row>
+             <v-toolbar-items>
+                    
+            
+              <v-layout align-space-between justify-center row fill-height>      
+              <v-col cols="4" v-if = "playArrow">
+                <v-icon @click="playSound()" medium class="ml-1" color="black">far fa-play-circle</v-icon>
+              </v-col>
+              <v-col cols="4" v-else>
+                <v-icon @click="pauseSound()" medium class="ml-1" color="black">far fa-pause-circle</v-icon>
+              </v-col>
+         
+              <v-col cols="4">
+                <v-icon @click="stopSound()" medium color="black" class="ml-2">far fa-stop-circle</v-icon>
+              </v-col>
+
+             
+            <v-flex xs12 md4>
+              <v-progress-linear id="progress" :value="percentage" height="3" background-opacity = "0.5" color="blue-grey darken-3" style = "margin: 15px;" @click.native="onClickProgress($event)"></v-progress-linear>
+            </v-flex>
+      </v-layout>
+                 
+              <v-col cols="4">
+                <v-menu offset-y>
+                  <!-- <template v-slot:activator="{ on }">
+                     <v-btn v-on="on" depressed block text color="#c38b8b">{{speechRateText}}</v-btn> 
+                  </template> -->
+                  <v-list>
+                    <v-list-item>
+                      <v-list-item-title class="mx-2" @click="changeSpeechRate($event)"><center>0.75x</center></v-list-item-title>
+                    </v-list-item>
+                    <v-divider></v-divider>
+                    <v-list-item>
+                      <v-list-item-title  class="mx-2"  @click="changeSpeechRate($event)"><center>1x</center></v-list-item-title>
+                    </v-list-item>
+                    <v-divider></v-divider>
+                    <v-list-item>
+                      <v-list-item-title  class="mx-2" @click="changeSpeechRate($event)"><center>1.25x</center></v-list-item-title>
+                    </v-list-item>
+                  </v-list>
+                </v-menu>
+              </v-col>
+            </v-toolbar-items>
+          </v-row>
+        </v-container>
+      </template>
+      <v-icon v-on="on" color="black" @click="speechSlot = !speechSlot" large>volume_up</v-icon>
+      <v-menu min-width="40%" offset-y>
+        <template v-slot:activator="{ on }" style="min-width:100%;">
+          <v-toolbar-title v-on="on">
+            <span>ᴀA</span>
+          </v-toolbar-title>
+        </template>
+        <v-list style="overflow-y: hidden;">
+          <v-list-tile>
+            <v-slider v-model="fontSize" :min="1" :max="40" :step="1"></v-slider>
+          </v-list-tile>
+        </v-list>
+      </v-menu>
+    </v-toolbar>
+  </v-layout>
+</div>
+
+<div v-if="$route.name === 'FreeTalking_Opinion_LG9'">
+  <v-layout>
+    <v-navigation-drawer v-model="drawer" :mini-variant="mini" absolute style="background-color:#E5E5E5; position:fixed; top:0; left:0; overflow-y:hidden;" temporary>
+      <v-list class="pa-1">
+        <v-list-tile avatar>
+          <v-list-tile-avatar>
+            <img src="http://cdn.onlinewebfonts.com/svg/img_97686.png">
+          </v-list-tile-avatar>
+          <v-list-tile-content>
+            <v-list-tile-title>Free Talking Topics</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+      </v-list>
+      <v-divider></v-divider>
+      <v-list>
+        <template v-slot:activator>
+          <v-list-tile>
+            <v-list-tile-action>
+              <v-icon>book</v-icon>
+            </v-list-tile-action>
+            <v-list-tile-title>Table of Contents</v-list-tile-title>
+          </v-list-tile>
+        </template>
+        
+        <v-list class="custom-list">
+          <v-list-tile>
+            <h2>Table of Contents</h2>
+          </v-list-tile>
+                  
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit1'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG9/unit' + 1) ">[04/19] Should English Education Be Mandatory in Korea?<br>한국의 영어교육은 필수여야 하는가?</v-list-tile>       
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit2'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG9/unit' + 2) ">[04/20] Should Ads Targeting Children Be Restricted?<br>어린이 대상 광고는 제한돼야 하는가?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit3'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG9/unit' + 3) ">[04/21] Should Wild Animals Be Kept in Captivity?<br>야생동물들을 우리에 가두어야 하나?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit4'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG9/unit' + 4) ">[04/22] Should the Internet Be Censored?<br>인터넷은 검열돼야 하는가?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit5'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG9/unit' + 5) ">[04/23] The Internet is a good resource for information<br>인터넷은 좋은 정보 원천이다</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit6'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG9/unit' + 6) ">[04/26] Should Labels Be Introduced on Food?<br>식품 내용 표시 라벨은 필요한가?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit7'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG9/unit' + 7) ">[04/27] Is Social Networking Good for Society?<br>소셜 네트워킹은 사회에 좋은 영향을 끼칠까?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit8'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG9/unit' + 8) ">[04/28] Is a College Degree Necessary?<br>대학학위는 꼭 필요한 것인가?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit9'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG9/unit' + 9) ">[04/29] A college degree is a must for getting a job<br>대학교를 반드시 졸업해야 한다</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit10'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG9/unit' + 10) ">[04/30] Should Internet Trolls Be Policed?<br>온라인에 유해물을 게시하는 사람들을 제한해야 하는가?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit11'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG9/unit' + 11) ">[05/03] Should developing nations prioritize environmental protection over economic development?<br>개발도상국은 경제 발전보다 환경 보호를 우선시해야 하는가?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit12'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG9/unit' + 12) ">[05/04] Social media is harmful<br>소셜 미디어는 해롭다</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit13'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG9/unit' + 13) ">[05/05] Peer Pressure<br>동료집단으로부터 받는 압력</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit14'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG9/unit' + 14) ">[05/06] Public Etiquette<br>공공 예절</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit15'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG9/unit' + 15) ">[05/07] Cyberbullying should be considered a crime<br>사이버 왕따는 범죄로 취급되어야 한다</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit16'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG9/unit' + 16) ">[05/10] Should we do what we like doing?<br>좋아하는 일을 해야 하는가?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit17'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG9/unit' + 17) ">[05/11] Electronic dictionaries are better than paper dictionaries<br>전자 사전이 종이 사전보다 더 좋다</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit18'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG9/unit' + 18) ">[05/12] Homemakers should be paid for their work<br>가정주부는 가사업무에 대하여 급여를 받아야 한다</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit19'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG9/unit' + 19) ">[05/13] Families Should Have Only One Child<br>가족은 오로지 외동아를 가져야 한다</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit20'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG9/unit' + 20) ">[05/14] Reading books should be better than watching TV<br>독서가 TV 시청보다 좋다</v-list-tile>
+        </v-list>
+      </v-list>
+       
+    </v-navigation-drawer>
+    <v-toolbar app :fixed="toolbar.fixed" :clipped-left="toolbar.clippedLeft" style="background-color: #F76830;">
+      <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
+      <v-toolbar-title style="margin-left: 0px; margin-right: 5px;">Free Talking Topics</v-toolbar-title>
+      <v-spacer></v-spacer>
+      <template v-if="speechSlot" #extension>
+        <v-container>
+            <v-row>
+             <v-toolbar-items>
+                    
+            
+              <v-layout align-space-between justify-center row fill-height>      
+              <v-col cols="4" v-if = "playArrow">
+                <v-icon @click="playSound()" medium class="ml-1" color="black">far fa-play-circle</v-icon>
+              </v-col>
+              <v-col cols="4" v-else>
+                <v-icon @click="pauseSound()" medium class="ml-1" color="black">far fa-pause-circle</v-icon>
+              </v-col>
+         
+              <v-col cols="4">
+                <v-icon @click="stopSound()" medium color="black" class="ml-2">far fa-stop-circle</v-icon>
+              </v-col>
+
+             
+            <v-flex xs12 md4>
+              <v-progress-linear id="progress" :value="percentage" height="3" background-opacity = "0.5" color="blue-grey darken-3" style = "margin: 15px;" @click.native="onClickProgress($event)"></v-progress-linear>
+            </v-flex>
+      </v-layout>
+                 
+              <v-col cols="4">
+                <v-menu offset-y>
+                  <!-- <template v-slot:activator="{ on }">
+                     <v-btn v-on="on" depressed block text color="#c38b8b">{{speechRateText}}</v-btn> 
+                  </template> -->
+                  <v-list>
+                    <v-list-item>
+                      <v-list-item-title class="mx-2" @click="changeSpeechRate($event)"><center>0.75x</center></v-list-item-title>
+                    </v-list-item>
+                    <v-divider></v-divider>
+                    <v-list-item>
+                      <v-list-item-title  class="mx-2"  @click="changeSpeechRate($event)"><center>1x</center></v-list-item-title>
+                    </v-list-item>
+                    <v-divider></v-divider>
+                    <v-list-item>
+                      <v-list-item-title  class="mx-2" @click="changeSpeechRate($event)"><center>1.25x</center></v-list-item-title>
+                    </v-list-item>
+                  </v-list>
+                </v-menu>
+              </v-col>
+            </v-toolbar-items>
+          </v-row>
+        </v-container>
+      </template>
+      <v-icon v-on="on" color="black" @click="speechSlot = !speechSlot" large>volume_up</v-icon>
+      <v-menu min-width="40%" offset-y>
+        <template v-slot:activator="{ on }" style="min-width:100%;">
+          <v-toolbar-title v-on="on">
+            <span>ᴀA</span>
+          </v-toolbar-title>
+        </template>
+        <v-list style="overflow-y: hidden;">
+          <v-list-tile>
+            <v-slider v-model="fontSize" :min="1" :max="40" :step="1"></v-slider>
+          </v-list-tile>
+        </v-list>
+      </v-menu>
+    </v-toolbar>
+  </v-layout>
+</div>
+
+
+<div v-if="$route.name === 'FreeTalking_Opinion_LG10'">
+  <v-layout>
+    <v-navigation-drawer v-model="drawer" :mini-variant="mini" absolute style="background-color:#E5E5E5; position:fixed; top:0; left:0; overflow-y:hidden;" temporary>
+      <v-list class="pa-1">
+        <v-list-tile avatar>
+          <v-list-tile-avatar>
+            <img src="http://cdn.onlinewebfonts.com/svg/img_97686.png">
+          </v-list-tile-avatar>
+          <v-list-tile-content>
+            <v-list-tile-title>Free Talking Topics</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+      </v-list>
+      <v-divider></v-divider>
+      <v-list>
+        <template v-slot:activator>
+          <v-list-tile>
+            <v-list-tile-action>
+              <v-icon>book</v-icon>
+            </v-list-tile-action>
+            <v-list-tile-title>Table of Contents</v-list-tile-title>
+          </v-list-tile>
+        </template>
+        
+        <v-list class="custom-list">
+          <v-list-tile>
+            <h2>Table of Contents</h2>
+          </v-list-tile>
+                  
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit1'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG10/unit' + 1) ">[05/17] People should move out of their family's house before marriage<br>결혼 전에 부모님으로부터 독립해 살아야 한다</v-list-tile>       
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit2'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG10/unit' + 2) ">[05/18] Should there be more kid-free zones in public places?<br>노키즈존이 더 많아져야 할까?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit3'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG10/unit' + 3) ">[05/19] Should pets be allowed to enter public spaces?<br>애완 동물이 공공 장소에 출입할 수 있어야 할까?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit4'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG10/unit' + 4) ">[05/20] Should Junk Food Be Banned?<br>정크 푸드를 금지해야 할까?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit5'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG10/unit' + 5) ">[05/21] Should We Filter What We Watch?<br>미디어를 검열해야 한다</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit6'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG10/unit' + 6) ">[05/24] E-books Are The Best Way To Read<br>전자책은 책을 읽는 최고의 방법이다</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit7'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG10/unit' + 7) ">[05/25] What is a life worth?<br>과학 연구를 위한 동물 실험을 금지해야 할까?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit8'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG10/unit' + 8) ">[05/26] Wait, How Old Am I?<br>한국도 나이에 대해 국제적인 기준을 적용해야 한다</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit9'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG10/unit' + 9) ">[05/27] Why is life so expensive?<br>모든 시민에게 기본소득을 보장해야 한다</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit10'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG10/unit' + 10) ">[05/28] Is an Online Education Better Than a Traditional Class Education?<br>온라인 교육이 전통적으로 교실에서 행해지는 교육보다 나은가?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit11'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG10/unit' + 11) ">[05/31] Do I need to carry cash anymore?<br>우리 사회는 현금이 불필요한 사회로 바뀌어야 한다</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit12'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG10/unit' + 12) ">[06/01] How do we put an end to bullying?<br>학교는 정책적으로 아이들을 왕따로부터 보호해야 한다</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit13'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG10/unit' + 13) ">[06/02] Can a camera keep us safe?<br>사회에서 CCTV의 사용을 확대시켜야 한다</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit14'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG10/unit' + 14) ">[06/03] Allow Free Public Transit to Reduce Pollution & Stress<br>대중교통 수단은 무상으로 제공되어선 안 된다</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit15'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG10/unit' + 15) ">[06/04] How high should we go?<br>한국은 빌딩 고도제한을 해야 한다</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit16'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG10/unit' + 16) ">[06/07] Work Quality or Work Quantity?<br>성과연봉제는 사회에 좋을 것이다</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit17'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG10/unit' + 17) ">[06/08] Can we get our jobs back?<br>로봇이 인간들의 직업을 대체하는 것을 막아야 한다</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit18'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG10/unit' + 18) ">[06/09] Should We Stop Taking Cold Medicines?<br>사람들은 감기를 위해 약 복용하는 것을 중단해야 한다</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit19'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG10/unit' + 19) ">[06/10] Korea Needs A Junk Food Tax<br>한국은 정크푸드세를 도입해야 한다</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit20'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG10/unit' + 20) ">[06/11] Make Chuseok and Seollal Just One-Day Holidays<br>추석과 설날은 3일 연휴로 유지해야 한다</v-list-tile>
+        </v-list>
+      </v-list>
+       
+    </v-navigation-drawer>
+    <v-toolbar app :fixed="toolbar.fixed" :clipped-left="toolbar.clippedLeft" style="background-color: #F76830;">
+      <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
+      <v-toolbar-title style="margin-left: 0px; margin-right: 5px;">Free Talking Topics</v-toolbar-title>
+      <v-spacer></v-spacer>
+      <template v-if="speechSlot" #extension>
+        <v-container>
+            <v-row>
+             <v-toolbar-items>
+                    
+            
+              <v-layout align-space-between justify-center row fill-height>      
+              <v-col cols="4" v-if = "playArrow">
+                <v-icon @click="playSound()" medium class="ml-1" color="black">far fa-play-circle</v-icon>
+              </v-col>
+              <v-col cols="4" v-else>
+                <v-icon @click="pauseSound()" medium class="ml-1" color="black">far fa-pause-circle</v-icon>
+              </v-col>
+         
+              <v-col cols="4">
+                <v-icon @click="stopSound()" medium color="black" class="ml-2">far fa-stop-circle</v-icon>
+              </v-col>
+
+             
+            <v-flex xs12 md4>
+              <v-progress-linear id="progress" :value="percentage" height="3" background-opacity = "0.5" color="blue-grey darken-3" style = "margin: 15px;" @click.native="onClickProgress($event)"></v-progress-linear>
+            </v-flex>
+      </v-layout>
+                 
+              <v-col cols="4">
+                <v-menu offset-y>
+                  <!-- <template v-slot:activator="{ on }">
+                     <v-btn v-on="on" depressed block text color="#c38b8b">{{speechRateText}}</v-btn> 
+                  </template> -->
+                  <v-list>
+                    <v-list-item>
+                      <v-list-item-title class="mx-2" @click="changeSpeechRate($event)"><center>0.75x</center></v-list-item-title>
+                    </v-list-item>
+                    <v-divider></v-divider>
+                    <v-list-item>
+                      <v-list-item-title  class="mx-2"  @click="changeSpeechRate($event)"><center>1x</center></v-list-item-title>
+                    </v-list-item>
+                    <v-divider></v-divider>
+                    <v-list-item>
+                      <v-list-item-title  class="mx-2" @click="changeSpeechRate($event)"><center>1.25x</center></v-list-item-title>
+                    </v-list-item>
+                  </v-list>
+                </v-menu>
+              </v-col>
+            </v-toolbar-items>
+          </v-row>
+        </v-container>
+      </template>
+      <v-icon v-on="on" color="black" @click="speechSlot = !speechSlot" large>volume_up</v-icon>
+      <v-menu min-width="40%" offset-y>
+        <template v-slot:activator="{ on }" style="min-width:100%;">
+          <v-toolbar-title v-on="on">
+            <span>ᴀA</span>
+          </v-toolbar-title>
+        </template>
+        <v-list style="overflow-y: hidden;">
+          <v-list-tile>
+            <v-slider v-model="fontSize" :min="1" :max="40" :step="1"></v-slider>
+          </v-list-tile>
+        </v-list>
+      </v-menu>
+    </v-toolbar>
+  </v-layout>
+</div>
+
+
+<div v-if="$route.name === 'FreeTalking_Opinion_LG11'">
+  <v-layout>
+    <v-navigation-drawer v-model="drawer" :mini-variant="mini" absolute style="background-color:#E5E5E5; position:fixed; top:0; left:0; overflow-y:hidden;" temporary>
+      <v-list class="pa-1">
+        <v-list-tile avatar>
+          <v-list-tile-avatar>
+            <img src="http://cdn.onlinewebfonts.com/svg/img_97686.png">
+          </v-list-tile-avatar>
+          <v-list-tile-content>
+            <v-list-tile-title>Free Talking Topics</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+      </v-list>
+      <v-divider></v-divider>
+      <v-list>
+        <template v-slot:activator>
+          <v-list-tile>
+            <v-list-tile-action>
+              <v-icon>book</v-icon>
+            </v-list-tile-action>
+            <v-list-tile-title>Table of Contents</v-list-tile-title>
+          </v-list-tile>
+        </template>
+        
+        <v-list class="custom-list">
+          <v-list-tile>
+            <h2>Table of Contents</h2>
+          </v-list-tile>
+                  
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit1'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG11/unit' + 1) ">[06/14] Should Computers Replace Teachers? <br>컴퓨터가 교사를 대체해야 할까요?</v-list-tile>       
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit2'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG11/unit' + 2) ">[06/15] Are Artificial Sweeteners Harmful?<br>인공 감미료는 유해한가?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit3'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG11/unit' + 3) ">[06/16] Should We Keep Using Credit Cards?<br>신용카드를 계속해서 사용해야 하는가?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit4'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG11/unit' + 4) ">[06/17] Should We Get Rid of Cash?<br>현금을 없애도 될까요?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit5'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG11/unit' + 5) ">[06/18] Should We Always Allow Freedom Of Speech?<br>언론의 자유를 허용해야 한다</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit6'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG11/unit' + 6) ">[06/21] Should We Ban YouTube Advertisements?<br>유튜브 광고를 유지해야 한다</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit7'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG11/unit' + 7) ">[06/22] Are Electric Cars Better Than Regular Cars?<br>전기자동차가 일반자동차보다 더 좋은가요?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit8'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG11/unit' + 8) ">[06/23] Should Vaccination Be Mandatory?<br>백신 접종은 의무화되어야 하는가?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit9'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG11/unit' + 9) ">[06/24] Should We Ban The Production Of New Plastic?<br>새 플라스틱 제품 생산을 금지해야 할까?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit10'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG11/unit' + 10) ">[06/25] Should People Be Allowed To Walk While On Their Smartphones?<br>보행 중에 스마트폰을 사용하지 말아야 한다.</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit11'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG11/unit' + 11) ">[06/28] Should Product Placement Be Banned?<br>간접 광고는 금지되어야 하는가?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit12'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG11/unit' + 12) ">[06/29] Should We Track Animals?<br>야생동물들에 위치 추적장치를 달면 안 된다</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit13'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG11/unit' + 13) ">[06/30] Should We Pursue Our Dream Jobs?<br>우리는 우리가 꿈꾸는 직업을 추구해야 한다</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit14'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG11/unit' + 14) ">[07/01] Should We Impose A Climate Change Tax?<br>기후변화세금을 부과시켜야 한다</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit15'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG11/unit' + 15) ">[07/02] Should We Invest In Artificial Intelligence?<br>우리는 인공지능에 투자해야 한다</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit16'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG11/unit' + 16) ">[07/05] Should We Have Big Families?<br>대가족을 가져야 한다</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit17'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG11/unit' + 17) ">[07/06] Should We Invest In Bitcoin?<br>우리는 비트코인에 투자해야 하는가?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit18'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG11/unit' + 18) ">[07/07] Should We Bring Extinct Species Back From The Dead?<br>우리는 멸종된 종들을 되살려야 할까?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit19'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG11/unit' + 19) ">[07/08] Should We Build Underground Roads?<br>우리는 지하 도로를 만들어야 할까요?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit20'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG11/unit' + 20) ">[07/09] Should We Use Tracking Devices On Children?<br>아이들에게 위치 추적 장치를 사용해야 하나?</v-list-tile>
+        </v-list>
+      </v-list>
+       
+    </v-navigation-drawer>
+    <v-toolbar app :fixed="toolbar.fixed" :clipped-left="toolbar.clippedLeft" style="background-color: #F76830;">
+      <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
+      <v-toolbar-title style="margin-left: 0px; margin-right: 5px;">Free Talking Topics</v-toolbar-title>
+      <v-spacer></v-spacer>
+      <template v-if="speechSlot" #extension>
+        <v-container>
+            <v-row>
+             <v-toolbar-items>
+                    
+            
+              <v-layout align-space-between justify-center row fill-height>      
+              <v-col cols="4" v-if = "playArrow">
+                <v-icon @click="playSound()" medium class="ml-1" color="black">far fa-play-circle</v-icon>
+              </v-col>
+              <v-col cols="4" v-else>
+                <v-icon @click="pauseSound()" medium class="ml-1" color="black">far fa-pause-circle</v-icon>
+              </v-col>
+         
+              <v-col cols="4">
+                <v-icon @click="stopSound()" medium color="black" class="ml-2">far fa-stop-circle</v-icon>
+              </v-col>
+
+             
+            <v-flex xs12 md4>
+              <v-progress-linear id="progress" :value="percentage" height="3" background-opacity = "0.5" color="blue-grey darken-3" style = "margin: 15px;" @click.native="onClickProgress($event)"></v-progress-linear>
+            </v-flex>
+      </v-layout>
+                 
+              <v-col cols="4">
+                <v-menu offset-y>
+                  <!-- <template v-slot:activator="{ on }">
+                     <v-btn v-on="on" depressed block text color="#c38b8b">{{speechRateText}}</v-btn> 
+                  </template> -->
+                  <v-list>
+                    <v-list-item>
+                      <v-list-item-title class="mx-2" @click="changeSpeechRate($event)"><center>0.75x</center></v-list-item-title>
+                    </v-list-item>
+                    <v-divider></v-divider>
+                    <v-list-item>
+                      <v-list-item-title  class="mx-2"  @click="changeSpeechRate($event)"><center>1x</center></v-list-item-title>
+                    </v-list-item>
+                    <v-divider></v-divider>
+                    <v-list-item>
+                      <v-list-item-title  class="mx-2" @click="changeSpeechRate($event)"><center>1.25x</center></v-list-item-title>
+                    </v-list-item>
+                  </v-list>
+                </v-menu>
+              </v-col>
+            </v-toolbar-items>
+          </v-row>
+        </v-container>
+      </template>
+      <v-icon v-on="on" color="black" @click="speechSlot = !speechSlot" large>volume_up</v-icon>
+      <v-menu min-width="40%" offset-y>
+        <template v-slot:activator="{ on }" style="min-width:100%;">
+          <v-toolbar-title v-on="on">
+            <span>ᴀA</span>
+          </v-toolbar-title>
+        </template>
+        <v-list style="overflow-y: hidden;">
+          <v-list-tile>
+            <v-slider v-model="fontSize" :min="1" :max="40" :step="1"></v-slider>
+          </v-list-tile>
+        </v-list>
+      </v-menu>
+    </v-toolbar>
+  </v-layout>
+</div>
+
+<div v-if="$route.name === 'FreeTalking_Opinion_LG12'">
+  <v-layout>
+    <v-navigation-drawer v-model="drawer" :mini-variant="mini" absolute style="background-color:#E5E5E5; position:fixed; top:0; left:0; overflow-y:hidden;" temporary>
+      <v-list class="pa-1">
+        <v-list-tile avatar>
+          <v-list-tile-avatar>
+            <img src="http://cdn.onlinewebfonts.com/svg/img_97686.png">
+          </v-list-tile-avatar>
+          <v-list-tile-content>
+            <v-list-tile-title>Free Talking Topics</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+      </v-list>
+      <v-divider></v-divider>
+      <v-list>
+        <template v-slot:activator>
+          <v-list-tile>
+            <v-list-tile-action>
+              <v-icon>book</v-icon>
+            </v-list-tile-action>
+            <v-list-tile-title>Table of Contents</v-list-tile-title>
+          </v-list-tile>
+        </template>
+        
+        <v-list class="custom-list">
+          <v-list-tile>
+            <h2>Table of Contents</h2>
+          </v-list-tile>
+                  
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit1'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG12/unit' + 1) ">[07/12] Is Cable Better Than Streaming Services?<br>케이블 대 스트리밍 서비스</v-list-tile>       
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit2'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG12/unit' + 2) ">[07/13] Is Tap Water Safe to Drink?<br>수돗물은 그냥 마셔도 안전할까?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit3'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG12/unit' + 3) ">[07/14] Are Multivitamins Healthy?<br>종합비타민제는 건강에 좋은가?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit4'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG12/unit' + 4) ">[07/15] Are Headphones Bad for Your Ears?<br>헤드폰은 귀에 해로운가?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit5'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG12/unit' + 5) ">[07/16] Is Vaping Unhealthy?<br>전자담배는 해로운가?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit6'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG12/unit' + 6) ">[07/19] Are Fermented Foods Healthy?<br>발효음식은 건강에 좋은가?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit7'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG12/unit' + 7) ">[07/20] Are Nuts Healthy?<br>견과류는 건강에 좋은가?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit8'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG12/unit' + 8) ">[07/21] Should Marriage Be Mandatory?<br>결혼은 의무화되어야 하는가?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit9'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG12/unit' + 9) ">[07/22] The Effects of Mukbangs on Health<br>먹방이 건강에 끼치는 영향</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit10'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG12/unit' + 10) ">[07/23] Is Reality Television Harmful?<br>리얼리티 텔레비전은 해로운가?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit11'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG12/unit' + 11) ">[07/26] Is Hypnosis Real?<br>최면술은 진짜인가?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit12'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG12/unit' + 12) ">[07/27] Are Expensive Products Better?<br>비싼 제품이 정말 더 좋은가?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit13'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG12/unit' + 13) ">[07/28] Is MSG Unhealthy?<br>MSG는 건강에 해로운가?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit14'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG12/unit' + 14) ">[07/29] Is Your College Major Important?<br>대학 전공이 중요한가?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit15'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG12/unit' + 15) ">[07/30] Can Masks Protect You From the Coronavirus?<br>마스크는 코로나바이러스에 효과가 있을까?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit16'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG12/unit' + 16) ">[08/02] Buses Versus Subways<br>버스 대 지하철</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit17'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG12/unit' + 17) ">[08/03] iPhones Versus Android Phones<br>아이폰 대 안드로이드</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit18'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG12/unit' + 18) ">[08/04] New Goods Versus Used Goods<br>새제품 대 중고제품</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit19'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG12/unit' + 19) ">[08/05] Online Classes Versus Traditional Classes<br>온라인 수업 대 전통 수업</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit20'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG12/unit' + 20) ">[08/06] Should Students Stop Dissecting Animals?<br>동물 해부 실험은 금지되어야 하는가?</v-list-tile>
+        </v-list>
+      </v-list>
+       
+    </v-navigation-drawer>
+    <v-toolbar app :fixed="toolbar.fixed" :clipped-left="toolbar.clippedLeft" style="background-color: #F76830;">
+      <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
+      <v-toolbar-title style="margin-left: 0px; margin-right: 5px;">Free Talking Topics</v-toolbar-title>
+      <v-spacer></v-spacer>
+      <template v-if="speechSlot" #extension>
+        <v-container>
+            <v-row>
+             <v-toolbar-items>
+                    
+            
+              <v-layout align-space-between justify-center row fill-height>      
+              <v-col cols="4" v-if = "playArrow">
+                <v-icon @click="playSound()" medium class="ml-1" color="black">far fa-play-circle</v-icon>
+              </v-col>
+              <v-col cols="4" v-else>
+                <v-icon @click="pauseSound()" medium class="ml-1" color="black">far fa-pause-circle</v-icon>
+              </v-col>
+         
+              <v-col cols="4">
+                <v-icon @click="stopSound()" medium color="black" class="ml-2">far fa-stop-circle</v-icon>
+              </v-col>
+
+             
+            <v-flex xs12 md4>
+              <v-progress-linear id="progress" :value="percentage" height="3" background-opacity = "0.5" color="blue-grey darken-3" style = "margin: 15px;" @click.native="onClickProgress($event)"></v-progress-linear>
+            </v-flex>
+      </v-layout>
+                 
+              <v-col cols="4">
+                <v-menu offset-y>
+                  <!-- <template v-slot:activator="{ on }">
+                     <v-btn v-on="on" depressed block text color="#c38b8b">{{speechRateText}}</v-btn> 
+                  </template> -->
+                  <v-list>
+                    <v-list-item>
+                      <v-list-item-title class="mx-2" @click="changeSpeechRate($event)"><center>0.75x</center></v-list-item-title>
+                    </v-list-item>
+                    <v-divider></v-divider>
+                    <v-list-item>
+                      <v-list-item-title  class="mx-2"  @click="changeSpeechRate($event)"><center>1x</center></v-list-item-title>
+                    </v-list-item>
+                    <v-divider></v-divider>
+                    <v-list-item>
+                      <v-list-item-title  class="mx-2" @click="changeSpeechRate($event)"><center>1.25x</center></v-list-item-title>
+                    </v-list-item>
+                  </v-list>
+                </v-menu>
+              </v-col>
+            </v-toolbar-items>
+          </v-row>
+        </v-container>
+      </template>
+      <v-icon v-on="on" color="black" @click="speechSlot = !speechSlot" large>volume_up</v-icon>
+      <v-menu min-width="40%" offset-y>
+        <template v-slot:activator="{ on }" style="min-width:100%;">
+          <v-toolbar-title v-on="on">
+            <span>ᴀA</span>
+          </v-toolbar-title>
+        </template>
+        <v-list style="overflow-y: hidden;">
+          <v-list-tile>
+            <v-slider v-model="fontSize" :min="1" :max="40" :step="1"></v-slider>
+          </v-list-tile>
+        </v-list>
+      </v-menu>
+    </v-toolbar>
+  </v-layout>
+</div>
+
+
+
+<div v-if="$route.name === 'FreeTalking_Opinion_LG13'">
+  <v-layout>
+    <v-navigation-drawer v-model="drawer" :mini-variant="mini" absolute style="background-color:#E5E5E5; position:fixed; top:0; left:0; overflow-y:hidden;" temporary>
+      <v-list class="pa-1">
+        <v-list-tile avatar>
+          <v-list-tile-avatar>
+            <img src="http://cdn.onlinewebfonts.com/svg/img_97686.png">
+          </v-list-tile-avatar>
+          <v-list-tile-content>
+            <v-list-tile-title>Free Talking Topics</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+      </v-list>
+      <v-divider></v-divider>
+      <v-list>
+        <template v-slot:activator>
+          <v-list-tile>
+            <v-list-tile-action>
+              <v-icon>book</v-icon>
+            </v-list-tile-action>
+            <v-list-tile-title>Table of Contents</v-list-tile-title>
+          </v-list-tile>
+        </template>
+        
+        <v-list class="custom-list">
+          <v-list-tile>
+            <h2>Table of Contents</h2>
+          </v-list-tile>
+                  
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit1'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG13/unit' + 1) ">[08/09] Chinese Herbal Medicine<br>한약</v-list-tile>       
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit2'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG13/unit' + 2) ">[08/10] Processed Meat<br>가공육</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit3'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG13/unit' + 3) ">[08/11] Are People Inherently Good?<br>인간의 본성은 선한가?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit4'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG13/unit' + 4) ">[08/12] Vegetarianism Versus Veganism<br>채식주의 대 비거니즘</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit5'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG13/unit' + 5) ">[08/13] Should We Get Rid of Movie Theaters?<br>영화관을 없애도 될까?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit6'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG13/unit' + 6) ">[08/24] Importance of Breakfast<br>아침식사의 중요성</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit7'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG13/unit' + 7) ">[08/16] Importance of Names<br>이름의 중요성</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit8'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG13/unit' + 8) ">[08/17] Is Intermittent Fasting Healthy?<br>간헐적 단식은 건강에 좋을까?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit9'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG13/unit' + 9) ">[08/18] Does Lifting Weights Stunt Growth?<br>근력 운동, 키 성장에 방해될까?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit10'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG13/unit' + 10) ">[08/19] An Apple a Day Keeps the Doctor Away<br>1일 1사과는 의사를 멀리하게끔 해준다</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit11'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG13/unit' + 11) ">[08/20] Standardized Tests Should Be Banned<br>표준화된 시험 실시 금지</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit12'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG13/unit' + 12) ">[08/23] Is It Safe To Stop Wearing Masks After Vaccine?<br>백신을 접종하면 마스크를 벗어도 될까?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit13'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG13/unit' + 13) ">[08/24] Has Social Media Improved Human Communication?<br>SNS는 사람들 간의 소통을 증진시켰을까?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit14'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG13/unit' + 14) ">[08/25] Do We Still Need Public Libraries?<br>공공도서관, 여전히 필요할까?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit15'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG13/unit' + 15) ">[08/26] Overfishing poses a greater threat to the environment than global warming<br>어류 남획은 지구 온난화보다 환경에 더 큰 위협이다</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit16'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG13/unit' + 16) ">[08/27] Has the spread of smartphones had a negative influence on Korean culture?<br>스마트 폰의 확산은 한국 문화에 부정적인 영향을 미치는가?</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit17'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG13/unit' + 17) ">[08/30] Bottled water has done more harm than good<br>병에 든 생수는 득보다 실이 많다</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit18'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG13/unit' + 18) ">[09/01] Learning a musical instrument should be mandatory at school<br>학교에서 악기를 반드시 배워야 한다.</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit19'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG13/unit' + 19) ">[09/02] Children should own a pet<br>아이들은 애완동물을 길러야 한다.</v-list-tile>
+          <v-list-tile class = "lg" :class="{'lastUrl': onHighlight == 'unit20'}" @click="$router.push('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG13/unit' + 20) ">[09/03] Students should be required to play extracurricular sports<br>학생들은 과외 스포츠활동이 요구되어야 한다.</v-list-tile>
+        </v-list>
+      </v-list>
+       
+    </v-navigation-drawer>
+    <v-toolbar app :fixed="toolbar.fixed" :clipped-left="toolbar.clippedLeft" style="background-color: #F76830;">
+      <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
+      <v-toolbar-title style="margin-left: 0px; margin-right: 5px;">Free Talking Topics</v-toolbar-title>
+      <v-spacer></v-spacer>
+      <template v-if="speechSlot" #extension>
+        <v-container>
+            <v-row>
+             <v-toolbar-items>
+                    
+            
+              <v-layout align-space-between justify-center row fill-height>      
+              <v-col cols="4" v-if = "playArrow">
+                <v-icon @click="playSound()" medium class="ml-1" color="black">far fa-play-circle</v-icon>
+              </v-col>
+              <v-col cols="4" v-else>
+                <v-icon @click="pauseSound()" medium class="ml-1" color="black">far fa-pause-circle</v-icon>
+              </v-col>
+         
+              <v-col cols="4">
+                <v-icon @click="stopSound()" medium color="black" class="ml-2">far fa-stop-circle</v-icon>
+              </v-col>
+
+             
+            <v-flex xs12 md4>
+              <v-progress-linear id="progress" :value="percentage" height="3" background-opacity = "0.5" color="blue-grey darken-3" style = "margin: 15px;" @click.native="onClickProgress($event)"></v-progress-linear>
+            </v-flex>
+      </v-layout>
+                 
+              <v-col cols="4">
+                <v-menu offset-y>
+                  <!-- <template v-slot:activator="{ on }">
+                     <v-btn v-on="on" depressed block text color="#c38b8b">{{speechRateText}}</v-btn> 
+                  </template> -->
+                  <v-list>
+                    <v-list-item>
+                      <v-list-item-title class="mx-2" @click="changeSpeechRate($event)"><center>0.75x</center></v-list-item-title>
+                    </v-list-item>
+                    <v-divider></v-divider>
+                    <v-list-item>
+                      <v-list-item-title  class="mx-2"  @click="changeSpeechRate($event)"><center>1x</center></v-list-item-title>
+                    </v-list-item>
+                    <v-divider></v-divider>
+                    <v-list-item>
+                      <v-list-item-title  class="mx-2" @click="changeSpeechRate($event)"><center>1.25x</center></v-list-item-title>
+                    </v-list-item>
+                  </v-list>
+                </v-menu>
+              </v-col>
+            </v-toolbar-items>
+          </v-row>
+        </v-container>
+      </template>
+      <v-icon v-on="on" color="black" @click="speechSlot = !speechSlot" large>volume_up</v-icon>
+      <v-menu min-width="40%" offset-y>
+        <template v-slot:activator="{ on }" style="min-width:100%;">
+          <v-toolbar-title v-on="on">
+            <span>ᴀA</span>
+          </v-toolbar-title>
+        </template>
+        <v-list style="overflow-y: hidden;">
+          <v-list-tile>
+            <v-slider v-model="fontSize" :min="1" :max="40" :step="1"></v-slider>
+          </v-list-tile>
+        </v-list>
+      </v-menu>
+    </v-toolbar>
+  </v-layout>
+</div>
+
+
+
+
 
 <div v-if="$route.name === 'Level_test'">
   <v-layout>
@@ -5234,6 +5972,7 @@
 import Speech from 'speak-tts'
 import Vue from 'vue'
 import axios from 'axios'
+import moment from 'moment'
 
 
 export default {
@@ -5273,6 +6012,7 @@ export default {
     audio: '',
     percentage: 0,
     audioPercent: 0,
+    data: '',
    
     
 
@@ -5302,13 +6042,68 @@ watch: {
 
 },
 
+created() {
+
+  console.log('test1')
+  
+
+    window.addEventListener(
+      "message",
+      event => {
+        console.log(event.data);
+        console.log(moment(event.data.materialStartTime).format('h:mm'))
+        localStorage.setItem('material_start_time', moment(event.data).format('h:mm'))
+      },
+      false
+    );
+
+    window.addEventListener("blur", ()=>{
+      this.audio.pause()
+      this.audioPlaying = false;
+      this.playArrow = true;
+    })
+
+     window.addEventListener("focus", ()=>{
+       this.audio.play()   
+    })
+
+  
+},
+
 mounted() {
   this.speech.cancel()
   console.log(window.location.href)
   this.onHighlight()
+
+  if(this.$router.history.current.fullPath.indexOf('/DialogueBooks') != -1 && this.isMobile){
+    this.fontSize = 15
+    console.log('isMobile')
+  }
+
+  if(this.$router.history.current.fullPath.indexOf('/freetalking/beginner') != -1 && this.isMobile){
+    this.fontSize = 16
+    console.log('isMobile')
+  }
+
+  
+
+
+  // if(localStorage.getItem('book_start_time') != null ){
+  //   console.log(localStorage.getItem('book_start_time'))
+  // }else{
+  //   this.$router.push('/notfound')
+  // }
 },
 
-
+computed: {
+  isMobile(){
+    if(this.$vuetify.breakpoint.xsOnly){
+      console.log('resizing')
+      return true
+    }
+    return  false
+  }
+},
 
 methods: {
 
@@ -5320,10 +6115,6 @@ methods: {
     var res = str.split("/")
     this.onHighlight = res
     this.onHighlight = this.onHighlight[this.onHighlight.length -1]
-    console.log(this.onHighlight,"dsafsdf")
-    console.log(this.onHighlight[this.onHighlight.length -1],"onclick")
-    
-
   },
 
  
@@ -5557,6 +6348,84 @@ methods: {
       for(var i = 0; i < 76; i++){
         if(this.$router.history.current.fullPath === '/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG7/unit' + i){
           this.audio = new Audio('../../audio/FreeTalking-Opinion-LG7/Unit' +i+ '.mp3')
+          this.icon = "pause";
+          this.audioPlaying = true;
+          this.playArrow = false;
+          this.audio.play();
+          setInterval(this.setPosition, 50)
+        }
+      }
+    }
+
+    if(this.$router.history.current.fullPath.indexOf('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG8') != -1){
+      for(var i = 0; i < 76; i++){
+        if(this.$router.history.current.fullPath === '/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG8/unit' + i){
+          this.audio = new Audio('../../audio/FreeTalking-Opinion-LG8/Unit' +i+ '.mp3')
+          this.icon = "pause";
+          this.audioPlaying = true;
+          this.playArrow = false;
+          this.audio.play();
+          setInterval(this.setPosition, 50)
+        }
+      }
+    }
+
+    if(this.$router.history.current.fullPath.indexOf('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG9') != -1){
+      for(var i = 0; i < 76; i++){
+        if(this.$router.history.current.fullPath === '/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG9/unit' + i){
+          this.audio = new Audio('../../audio/FreeTalking-Opinion-LG9/Unit' +i+ '.mp3')
+          this.icon = "pause";
+          this.audioPlaying = true;
+          this.playArrow = false;
+          this.audio.play();
+          setInterval(this.setPosition, 50)
+        }
+      }
+    }
+
+    if(this.$router.history.current.fullPath.indexOf('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG10') != -1){
+      for(var i = 0; i < 76; i++){
+        if(this.$router.history.current.fullPath === '/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG10/unit' + i){
+          this.audio = new Audio('../../audio/FreeTalking-Opinion-LG10/Unit' +i+ '.mp3')
+          this.icon = "pause";
+          this.audioPlaying = true;
+          this.playArrow = false;
+          this.audio.play();
+          setInterval(this.setPosition, 50)
+        }
+      }
+    }
+
+    if(this.$router.history.current.fullPath.indexOf('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG11') != -1){
+      for(var i = 0; i < 76; i++){
+        if(this.$router.history.current.fullPath === '/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG11/unit' + i){
+          this.audio = new Audio('../../audio/FreeTalking-Opinion-LG11/Unit' +i+ '.mp3')
+          this.icon = "pause";
+          this.audioPlaying = true;
+          this.playArrow = false;
+          this.audio.play();
+          setInterval(this.setPosition, 50)
+        }
+      }
+    }
+
+    if(this.$router.history.current.fullPath.indexOf('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG12') != -1){
+      for(var i = 0; i < 76; i++){
+        if(this.$router.history.current.fullPath === '/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG12/unit' + i){
+          this.audio = new Audio('../../audio/FreeTalking-Opinion-LG12/Unit' +i+ '.mp3')
+          this.icon = "pause";
+          this.audioPlaying = true;
+          this.playArrow = false;
+          this.audio.play();
+          setInterval(this.setPosition, 50)
+        }
+      }
+    }
+
+    if(this.$router.history.current.fullPath.indexOf('/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG13') != -1){
+      for(var i = 0; i < 76; i++){
+        if(this.$router.history.current.fullPath === '/FreeTalking-Opinion-LG/FreeTalking-Opinion-LG13/unit' + i){
+          this.audio = new Audio('../../audio/FreeTalking-Opinion-LG13/Unit' +i+ '.mp3')
           this.icon = "pause";
           this.audioPlaying = true;
           this.playArrow = false;

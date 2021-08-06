@@ -30,6 +30,7 @@
     "dependencies": {
         "@fortawesome/fontawesome-free": "^5.15.1",
         "babel-polyfill": "^6.26.0",
+        "moment": "^2.29.1",
         "speak-tts": "^2.0.8",
         "v-tooltip": "^2.0.2",
         "vue-router": "^3.0.6",
